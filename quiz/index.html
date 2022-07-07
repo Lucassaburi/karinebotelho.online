@@ -67,6 +67,26 @@
       display: none;
     }
   </style>
+  
+  
+  
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1036533630559200');
+fbq('track', 'AddToCart');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1036533630559200&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body> 
   <div class="container">
@@ -74,17 +94,17 @@
       <div id="primeira">
         <div class="question">
           <h1>Questão 1</h1>
-          <p>Qual é o seu gênero?</p>
+          <p>Você costuma acordar cansada(o)?</p>
         </div>
         <div class="answer">
-          <button class="btn" onclick="segunda()">MASCULINO</button>
-          <button class="btn" onclick="segunda()">FEMININO</button>
+          <button class="btn" onclick="segunda()">SIM</button>
+          <button class="btn" onclick="segunda()">NÃO</button>
         </div>
       </div>
       <div id="segunda" class="hide">
         <div class="question">
           <h1>Questão 2</h1>
-          <p>Você costuma acordar cansada(o)?</p>
+          <p>Você normalmente come açúcar à noite?</p>
         </div>
         <div class="answer">
           <button class="btn" onclick="terceira()">SIM</button>
@@ -94,16 +114,6 @@
       <div id="terceira" class="hide">
         <div class="question">
           <h1>Questão 3</h1>
-          <p>Você normalmente come açúcar à noite?</p>
-        </div>
-        <div class="answer">
-          <button class="btn" onclick="quarta()">SIM</button>
-          <button class="btn" onclick="quarta()">NÃO</button>
-        </div>
-      </div>
-      <div id="quarta" class="hide">
-        <div class="question">
-          <h1>Questão 4</h1>
           <p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o fim?</p>
         </div>
         <div class="answer">
@@ -111,9 +121,10 @@
           <button class="btn" onclick="redirect()">NÃO</button>
         </div>
       </div>
+      
     </div>
     <p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
-    <p style="text-align: center; font-weight: bold;"><a href="https://protocolozerobarriga.com/termos" style="color: black;">Termos de Uso</a> | <a href="https://protocolozerobarriga.com/privacidade" style="color: black;">Política de Privacidade</a></p>
+    <p style="text-align: center; font-weight: bold;"><a href="http://karinebotelho.online//termos" style="color: black;">Termos de Uso</a> | <a href="http://karinebotelho.online/.com/privacidade" style="color: black;">Política de Privacidade</a></p>
   </div>
   <script>
     function segunda() {
@@ -129,7 +140,7 @@
       document.getElementById("quarta").classList.remove("hide")
     }
     function redirect() {
-      location.href = "https://protocolozerobarriga.com" // SEU LINK AQUI
+      location.href = "http://karinebotelho.online/" // SEU LINK AQUI
     }
   </script>
 </body>
