@@ -75,16 +75,20 @@ E você <span style="color:#BF0A0A; font-weight: bold;">nunca mais</span> terá 
 <p class="lead">
 Essa é a sua <span style="color:#BF0A0A; font-weight: bold;"><u>última chance</u></span> de tirar vantagem disso. </p>
 <br>
-<div style="text-align:center">
-          <button id="kiwify-upsell-trigger-J8LEQ4R" style="background-color:#2ECC70;padding:12px 16px;cursor:pointer;color:#FFFFFF;font-weight:600;border-radius:4px;border:1px solid #2ECC70;font-size:20px;">Sim, Adicione Isso Ao Meu Pedido</button>
-          <div id="kiwify-upsell-cancel-trigger" style="margin-top:1rem;cursor:pointer;font-size:16px;text-decoration:underline;font-family:sans-serif;">Não, compreendo que nunca mais verei essa oferta novamente.</div>
-        </div><script> 
-            let nextUpsellURL = "";
-            let nextDownsellURL = "";</script><script src="https://kiwify-snippets.netlify.app/upsell/upsell.min.js"></script>
-<br>
-<br>
-<br>
-<br>
+<!-- HOTMART - Upsell Widget -->
+<div id="box_hotmart"></div>
+<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+
+<script>
+opts = {
+key: 'USL-55301-204664-f1b1367cb24e5e2f32808a88851f3dd3',
+width: '650' ,
+height: '420'
+};
+Upsell.Widget.show(opts);
+</script>
+<!-- HOTMART - Upsell Widget [end] -->
+
 <br>
 <br>
 <footer class="flex-shrink-0 py-4 bg-dark text-white">
